@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilz - Minecraft Чит</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 4rem;
+            color: #6c63ff;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(108, 99, 255, 0.5);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(90deg, #6c63ff, #ff6b9d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff6b9d, #6c63ff);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .feature-card {
+            background: rgba(30, 30, 46, 0.7);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(108, 99, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            border-color: #6c63ff;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #6c63ff;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .feature-list {
+            list-style-type: none;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #ccc;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #6c63ff;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .download-section {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #6c63ff, #ff6b9d);
+            color: white;
+            padding: 18px 50px;
+            font-size: 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(108, 99, 255, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(108, 99, 255, 0.6);
+        }
+
+        .warning {
+            background: rgba(255, 107, 157, 0.1);
+            border: 1px solid rgba(255, 107, 157, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .warning h3 {
+            color: #ff6b9d;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 50px;
+        }
+
+        .version {
+            color: #6c63ff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .logo {
+                font-size: 3rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <h1>Vilz</h1>
+            <div class="subtitle">Мощный чит-клиент для Minecraft</div>
+            <div>
+                <span class="badge">1.8.x - 1.20.x</span>
+                <span class="badge">Forge/Fabric</span>
+                <span class="badge">Windows/Mac/Linux</span>
+            </div>
+        </header>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-crosshairs"></i>
+                </div>
+                <h3 class="feature-title">Боевые функции</h3>
+                <ul class="feature-list">
+                    <li>KillAura (умный таргетинг)</li>
+                    <li>AimAssist (плавное наведение)</li>
+                    <li>TriggerBot (автовыстрел)</li>
+                    <li>Velocity (антиотдача)</li>
+                    <li>HitBoxes (увеличение хитбоксов)</li>
+                    <li>AntiBot (фильтр ботов)</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="feature-title">Визуальные функции</h3>
+                <ul class="feature-list">
+                    <li>ESP (обводка игроков)</li>
+                    <li>Tracers (линии к игрокам)</li>
+                    <li>X-Ray (видно через блоки)</li>
+                    <li>FullBright (постоянная яркость)</li>
+                    <li>Nametags (информация над игроками)</li>
+                    <li>Chams (цветные модели)</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-user-ninja"></i>
+                </div>
+                <h3 class="feature-title">Движение и другие</h3>
+                <ul class="feature-list">
+                    <li>Speed (ускорение движения)</li>
+                    <li>Fly (полет)</li>
+                    <li>NoFall (нет урона от падения)</li>
+                    <li>Scaffold (умный строитель)</li>
+                    <li>AutoClicker (автокликер)</li>
+                    <li>InventoryManager</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="download-section">
+            <h2>Скачать Vilz <span class="version">v2.1.4</span></h2>
+            <p>Совместимость: Minecraft 1.8.x, 1.12.x, 1.16.x, 1.18.x, 1.19.x, 1.20.x</p>
+            
+            <a href="#" class="download-btn">
+                <i class="fas fa-download"></i> Скачать сейчас
+            </a>
+            
+            <div class="warning">
+                <h3><i class="fas fa-exclamation-triangle"></i> Внимание!</h3>
+                <p>Используйте на приватных серверах или с разрешения администрации. Использование чита на публичных серверах может привести к бану.</p>
+            </div>
+            
+            <h3>Инструкция по установке:</h3>
+            <ol style="text-align: left; max-width: 600px; margin: 20px auto; color: #ccc;">
+                <li>Установите Forge или Fabric для вашей версии Minecraft</li>
+                <li>Скачайте файл Vilz.jar</li>
+                <li>Поместите файл в папку mods</li>
+                <li>Запустите Minecraft с установленным Forge/Fabric</li>
+                <li>Нажмите клавишу RShift для открытия меню</li>
+            </ol>
+        </section>
+
+        <footer>
+            <p>Vilz Client &copy; 2023 | Только для образовательных целей</p>
+            <p>GitHub Gist версия | Minecraft - торговая марка Mojang Studios</p>
+        </footer>
+    </div>
+
+    <script>
+        // Анимация для кнопки скачивания
+        document.querySelector('.download-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('В реальном сайте здесь будет ссылка для скачивания\n\nДля GitHub Gist: замените "#" на прямую ссылку для скачивания');
+            
+            // Анимация нажатия
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1.05)';
+            }, 150);
+        });
+        
+        // Анимация появления карточек
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+        });
+    </script>
+</body>
+</html>
